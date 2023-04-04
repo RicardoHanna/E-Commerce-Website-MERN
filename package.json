@@ -4,18 +4,24 @@
   "description": "# Lessons",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "build": "react-scripts build && mv build ../backend/public",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basir/mern-amazona.git"
+    "url": "git+https://github.com/RicardoHanna/E-Commerce-Website-MERN.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/basir/mern-amazona/issues"
+    "url": "https://github.com/RicardoHanna/E-Commerce-Website-MERN/issues"
   },
-  "homepage": "https://e-commerce-website-mern-23dt.vercel.app/"
+  "homepage": "https://github.com/RicardoHanna/E-Commerce-Website-MERN#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
 }
